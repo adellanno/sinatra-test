@@ -1,0 +1,13 @@
+ <div style='border: 3px dashed red'>
+   <% if @answer %>
+    You answered, <%= @answer %>!
+      <% else %>
+  <form action="/page2">
+    Tell me, is <%= @string %> 
+    a number or a word?
+    <input type="text" answer="answer">
+    <input type="submit" value="Submit">
+    </form>
+    <% end %>
+   <img src='/images/numbers.png'>
+   </div>
