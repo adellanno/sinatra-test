@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'shotgun'
 
-get '/' do 
+get '/hello' do
+  @visitor = params[:name]
   erb :index
 end
